@@ -1,109 +1,186 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title>
-			Studentska asocijacija FON
-		</title>
-	</head>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	 integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Prvo linkujemo bootstrap da ne bi overwritovalo style.css -->
+	<!-- font awesome poslednje linkujemo posto zelimo da se prvo ucitaju stilovi za stranice, ikonice posle -->
+	<title>
+		Studentska asocijacija FON
+	</title>
+</head>
+
 <body>
 
-<header>
-		 	<div id="menu">
-                <ul>
-                    <li class="nav">
-                        <a class="nav-link"  href="#onama"> o nama </a>
-                    </li>
-                    <li class="nav">
-                        <a class="nav-link" href="#projekti"> projekti </a>
-                    </li>
-                    <li class="nav logo">
-                    	<a id="logo" href="homeSA.html"> <img src="img/logo.png" alt="Logo SAFON" width="150px"> </a>
-                    </li>
-                    <li class="nav">
-                        <a class="nav-link" href="#partneri"> partneri </a>
-                    </li>
-                    <li class="nav">
-                        <a class="nav-link" href="#kontakt"> kontakt </a>
-                    </li>
-                </ul>
-            </div>
-
-		<h2 id="h2">Studentska asocijacija FON</h2>
-</header>
-
-<div class="bg">
-			<img src="img/home.jpg" alt="home photo" >
+	<header>
+		<div id="menu">
+			<ul>
+				<li class="nav">
+					<a class="nav-link" href="#onama"> o nama </a>
+				</li>
+				<li class="nav">
+					<a class="nav-link" href="#projekti"> projekti </a>
+				</li>
+				<li class="nav logo">
+					<a id="logo" href="index.html"> <img src="./img/logo.png" alt="Logo SAFON">
+					</a>
+				</li>
+				<li class="nav">
+					<a class="nav-link" href="#partneri"> partneri </a>
+				</li>
+				<li class="nav">
+					<a class="nav-link" href="#kontakt"> kontakt </a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4 text-light">Studentska asocijacija FON</h1>
+		</div>
 	</div>
+	<!-- jedan od razloga zbog kojih ja ne gotivim boostrap je to sto ljudi koji ga koriste ne iskoriscavaju njegove mogucnosti :D
+	boostrap ima svoj jumbotron element koji se cesto vidja -->
+	<!-- 
+	<div class="bg">
+		<img src="img/home.jpg" alt="home photo">
+	</div> -->
+	<!-- Ovo nam ne treba, koristimo background image u css -->
+	<main>
+		<div id="onama">
 
-<main >
-	<div id="onama">
-  		<div class="col" width="35%"><h2>Ko smo mi?</h2>
-  			<p>Studentska organizacija FON je perspektivna et accsamus et iusto odignissimos ducimus qui blandi oluptatum deniti atcorrupti quos dolores et quas moestias excepturi sint occaecati.</p></div>
-  		<div class="col" width="30%"><img src="img/itimen.jpg" width="350px"></div>
-  		<div class="col" width="35%"><h2>Kako postati član?</h2>Kao student accsamus et iusto odignissimos ducimus qui blandi oluptatum deniti atcorrupti quos dolores et quas moestias excepturi sint occaecati.</div>
-	</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
 
-	<div id="post">
+						<h2>Ko smo mi?</h2>
+						<p>Studentska organizacija FON je perspektivna et accsamus et iusto
+							odignissimos ducimus qui blandi oluptatum deniti atcorrupti quos dolores
+							et quas moestias excepturi sint occaecati.</p>
+					</div>
+					<div class="col-sm">
 
-  		<div class="img-post">
-  			<img src="img/1.jpg"> 
-  		</div>
-  		<div class="tekst">
+						<img src="img/itimen.jpg" width="350px">
+					</div>
+					<div class="col-sm">
 
-  		</div>
+						<h2>Kako postati član?</h2>
+						<p>Kao student accsamus et iusto odignissimos
+							ducimus qui blandi oluptatum deniti atcorrupti quos dolores et quas
+							moestias excepturi sint occaecati.</p>
 
-	</div>
+					</div>
+				</div>
+			</div>
+			<!-- dodajemo div sa bootstrap klasom container, on mu dodaje padding malo da ne bi bilo na ivici -->
+		</div>
 
-	<div id="projekti">
-  		<div class="naslov"><h2><b>Budu</b>ć<b>i projekti</b></h2></div>
-  		<div class="col3"><img src="img/slika.jpg" width="350px"> <p>At vero eos et accsamus et iusto odignissimos ducimu qundi oluptatum dentrrupti quoolores</p></div>
-  		<div class="col3"><img src="img/slika.jpg" width="350px"> <p>At vero eos et accsamus et iusto odignissimos ducimu qundi oluptatum dentrrupti quoolores</p></div>
-  		<div class="col3"><img src="img/slika.jpg" width="350px"> <p>At vero eos et accsamus et iusto odignissimos ducimu qundi oluptatum dentrrupti quoolores</p></div>
-	</div>
+		<div id="post">
+			<div class="row">
 
-	<div id="partneri">
-  		<div class="naslov"><h2><b>Naši partneri</b></h2></div>
-  		<div class="col4"><img src="img/partner.png" width="250px"></div>
-  		<div class="col4"><img src="img/partner.png" width="250px"></div>
-  		<div class="col4"><img src="img/partner.png" width="250px"></div>
-  		<div class="col4"><img src="img/partner.png" width="250px"></div>
-	</div>
+				<div class="col">
 
-</main>
+					<div class="img-post">
+						<img src="img/1.jpg">
+					</div>
+				</div>
+				<div class="col">
 
-<footer bg-color="grey">
+					<div class="tekst">
+						<h2>Neka objava</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In natus non
+							provident omnis placeat iusto tempora? Cumque nihil repellat consectetur
+							assumenda, omnis beatae dolores, quos odit quia porro eligendi nisi?</p>
+					</div>
 
-<div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 44.7726, lng: 20.4752},
-          zoom: 17
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5tl9JUaf3zFJR2wGdQjaVEFXz-lNqYBc&callback=initMap" async defer></script>
+				</div>
+			</div>
+		</div>
 
-    <div class="row" id="kontakt">
-	    <div class="col3" style="text-align: left">Kontaktirajte nas na <br>safon@office.com</div>
-  		<div class="col3">@copyright</div>
+		<div id="projekti">
+			<div class="naslov">
+				<h2><b>Budući projekti</b></h2>
+				<!-- ovo b je da bi sakrila to sto font nema slovo ć? moras da promenis na font koji ima to -->
+			</div>
+			<div class="container">
+				<div class="row">
 
-  		<div class="col3" id="drustvene">         
-            <a href="#" class="fa fa-facebook"></a>
-			<a href="#" class="fa fa-twitter"></a>
-			<a href="https://www.instagram.com/studentskaasocijacijafona/" class="fa fa-instagram"></a>
-        </div>
+					<div class="col-sm"><img src="img/slika.jpg" width="350px">
+						<p>At vero eos et accsamus et iusto odignissimos ducimu qundi oluptatum
+							dentrrupti quoolores</p>
+					</div>
+					<div class="col-sm"><img src="img/slika.jpg" width="350px">
+						<p>At vero eos et accsamus et iusto odignissimos ducimu qundi oluptatum
+							dentrrupti quoolores</p>
+					</div>
+					<div class="col-sm"><img src="img/slika.jpg" width="350px">
+						<p>At vero eos et accsamus et iusto odignissimos ducimu qundi oluptatum
+							dentrrupti quoolores</p>
+					</div>
+				</div>
+			</div>
+			<!-- pretpostavljam da si htela da imas 3 kolone pa sam izmenio col3 u col-3 i dodao row -->
+		</div>
 
-    </div>
+		<div id="partneri">
+			<div class="container">
 
-</footer>
+				<div class="naslov">
+					<h2><b>Naši partneri</b></h2>
+				</div>
+
+				<div class="row justify-content-center">
+
+					<div class="col"><img src="img/partner.png"></div>
+					<div class="col"><img src="img/partner.png"></div>
+					<div class="col"><img src="img/partner.png"></div>
+					<div class="col"><img src="img/partner.png"></div>
+				</div>
+			</div>
+			<!-- ako u divu sa klasom row dodamo divove sa klasom col, automatski se odredjuje sirina diva -->
+		</div>
+	</main>
+
+	<footer bg-color="grey">
+
+		<div id="map"></div>
+		<script>
+			var map;
+
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: {
+						lat: 44.7726,
+						lng: 20.4752
+					},
+					zoom: 17
+				});
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5tl9JUaf3zFJR2wGdQjaVEFXz-lNqYBc&callback=initMap"
+		 async defer></script>
+
+		<div class="row" id="kontakt">
+			<div class="col3" style="text-align: left">Kontaktirajte nas na <br>safon@office.com</div>
+			<div class="col3">@copyright</div>
+
+			<div class="col3" id="drustvene">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/studentskaasocijacijafona/" class="fa fa-instagram"></a>
+			</div>
+
+		</div>
+
+	</footer>
 
 </body>
+
 </html>
