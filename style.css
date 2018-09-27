@@ -211,6 +211,8 @@ header {
 	text-align: center;
 }
 
+
+
 .nav-link {
 	font-size: 24px;
 }
@@ -361,4 +363,32 @@ p,
 h2 {
 	margin: 10px 0;
 	/* dodajemo razmak na tagove, 10px gore i dole, 0 levo i desno */
+}
+
+
+/* samo za telefone i neke tablete tj, ekrane cija je sirina manja od 768px */
+@media only screen and (max-width : 768px) {
+	#menu {
+		padding-left: 8%;
+		overflow-x: scroll;
+		min-width: 100%;
+	}
+
+	.nav-link {
+		font-size: 16px;
+		padding: 5px;
+		margin: 0;
+	}
+
+	.logo img {
+		position: absolute;
+		top: 2%;
+		left: 2%;
+		max-width: 8%;
+	}
+
+	img {
+		max-width: 75vw;
+		/* da se ne bi desavalo da neka slika bude van ekrana na telefonima */
+	}
 }
