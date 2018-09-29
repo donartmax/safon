@@ -189,7 +189,7 @@ header {
 	font-weight: none;
 	font-size: 10px;
 	color: white;
-	padding: 5px 5px;
+	padding: 5px 0px;
 	margin-bottom: 0;
 }
 
@@ -198,9 +198,13 @@ header {
 	margin-top: 10px;
 	background-image: url('./img/home1.jpg');
 	background-size: cover;
-	background-repeat: no-repeat;
-	padding-bottom: 660px;
 	/* background size cover koristimo da bi se slika prosirila koliko moze, cuvajuci aspect ratio tj. da se ne rasteze */
+	padding: 25% 0;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
 }
 
 .img-home {
@@ -254,7 +258,6 @@ footer {
 	font-size: 18px;
 	text-transform: none;
 }
-
 
 #kontakt {
 	margin-top: 20px;
@@ -398,6 +401,7 @@ link {
 	color: white;
 }
 
+
 p,
 h2 {
 	margin: 5px 0;
@@ -431,9 +435,8 @@ h2 {
 	}
 
 	.jumbotron {
-		margin-top: 50px;
 		background-size: 100%;
-		padding-bottom: : 150px;
+		margin-top: 12%;
 	}
 
 	img {
@@ -460,9 +463,13 @@ h2 {
 @media only screen and (max-width : 415px) {
 	.logo img {
 		position: absolute;
-		top: 25%;
-		left: 3%;
+		top: 26%;
+		left: 5%;
 		max-width: 10%;
+	}
+
+	header {
+		font-size: 1% !important;
 	}
 }
 
