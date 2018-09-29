@@ -5,11 +5,14 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
+	<link rel="icon" href="img/logo.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	 integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous">
+
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- Prvo linkujemo bootstrap da ne bi overwritovalo style.css -->
 	<!-- font awesome poslednje linkujemo posto zelimo da se prvo ucitaju stilovi za stranice, ikonice posle -->
 	<title>
@@ -20,6 +23,7 @@
 <body>
 
 	<header>
+
 		<div id="menu">
 			<ul>
 				<li class="nav">
@@ -28,10 +32,12 @@
 				<li class="nav">
 					<a class="nav-link" href="#projekti"> projekti </a>
 				</li>
+				
 				<li class="nav logo">
 					<a id="logo" href="index.html"> <img src="./img/logo.png" alt="Logo SAFON">
 					</a>
 				</li>
+				
 				<li class="nav">
 					<a class="nav-link" href="#partneri"> partneri </a>
 				</li>
@@ -41,40 +47,55 @@
 			</ul>
 		</div>
 	</header>
+
+	<!--
 	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4 text-light">Studentska asocijacija FON</h1>
-		</div>
+		
+	</div> -->
+	
+	<div class="img-home">
+		<img src="./img/home1.jpg">
+		
 	</div>
 	<!-- jedan od razloga zbog kojih ja ne gotivim boostrap je to sto ljudi koji ga koriste ne iskoriscavaju njegove mogucnosti :D
 	boostrap ima svoj jumbotron element koji se cesto vidja -->
-	<!-- 
-	<div class="bg">
-		<img src="img/home.jpg" alt="home photo">
-	</div> -->
-	<!-- Ovo nam ne treba, koristimo background image u css -->
+
 	<main>
+
 		<div id="onama">
 
+		<div class="container pocetak">
+					<h2>O NAMA</h2>
+					<p class="tekst">
+						Studentska Asocijacija Fakulteta organizacionih nauka predstavlja studentsku organizaciju posvećenu studentima FON-a, sa ciljem  unapređenja kvaliteta studiranja, podsticanje studentske inicijative, međustudentske saradnje i profesionalnog razvoja tokom studiranja. SAFON nastoji da kroz svoje projekte podigne standard studiranja, omogući studentima da prošire svoje vidike i steknu dodatna znanja neophodna za uspešan početak karijere.
+						</p>
+		</div>
+	</div>
+
+		<div class="dark-bg">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm">
 
-						<h2>Ko smo mi?</h2>
-						<p>Studentska organizacija FON je perspektivna et accsamus et iusto
-							odignissimos ducimus qui blandi oluptatum deniti atcorrupti quos dolores
-							et quas moestias excepturi sint occaecati.</p>
+						<h2 class="naslov">MISIJA</h2>
+						<p class="tekst">
+						Nastojimo da spojimo oba studijska smera FON-a u svojim projektima i podstaknemo studente na praktičnu primenu teorijskih znanja.
+						</p> 
+						<p class="tekst"> Projekte stvaramo prema potrebi studenata kako bi se usavršili i stekli dodatna iskustva iz oblasti informacionih tehnologija, menadžmenta i organizacije.
+						</p>
+						<p class="tekst"> Naša misija se ogleda u pripremi studenata na izazove sa kojima će se susretati tokom građenja svoje profesonalne karijere i neprekidno usavršavanje njihovog znanja.
+						</p>
+						
+					</div>
+					<div class="col-sm image" style="height: auto;">
+						<img src="img/itimen.jpg" class="center" alt="IT i MEN">
 					</div>
 					<div class="col-sm">
 
-						<img src="img/itimen.jpg" width="350px">
-					</div>
-					<div class="col-sm">
-
-						<h2>Kako postati član?</h2>
-						<p>Kao student accsamus et iusto odignissimos
-							ducimus qui blandi oluptatum deniti atcorrupti quos dolores et quas
-							moestias excepturi sint occaecati.</p>
+						<h2 class="naslov">VIZIJA</h2>
+						<p class="tekst">
+						Neprestano postavljanje viših standarda kako u nivou organizovanosti i usklađenosti unutar organizacije, uspešnosti i kvalitetu projekata, brojnim partnerima i saradnicima, tako i u oblasti praćenja trendova poslovnog sveta, međunarodnoj saradnji i podizanju ugleda FON-a.
+						</p>
 
 					</div>
 				</div>
@@ -82,19 +103,20 @@
 			<!-- dodajemo div sa bootstrap klasom container, on mu dodaje padding malo da ne bi bilo na ivici -->
 		</div>
 
-		<div id="post">
+		<div id="projekti">
+			<div class="container">
 			<div class="row">
 
-				<div class="col">
+				<div class="col-sm">
 
-					<div class="img-post">
-						<img src="img/1.jpg">
+					<div class="img-proj">
+						<img src="img/upoznaj fon.png">
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-sm">
 
 					<div class="tekst">
-						<h2>Neka objava</h2>
+						<h2>Upoznaj FON 2018.</h2>
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In natus non
 							provident omnis placeat iusto tempora? Cumque nihil repellat consectetur
 							assumenda, omnis beatae dolores, quos odit quia porro eligendi nisi?</p>
@@ -102,46 +124,22 @@
 
 				</div>
 			</div>
-		</div>
-
-		<div id="projekti">
-			<div class="naslov">
-				<h2><b>Budući projekti</b></h2>
-				<!-- ovo b je da bi sakrila to sto font nema slovo ć? moras da promenis na font koji ima to -->
 			</div>
-			<div class="container">
-				<div class="row">
-
-					<div class="col-sm"><img src="img/slika.jpg" width="350px">
-						<p>At vero eos et accsamus et iusto odignissimos ducimu qundi oluptatum
-							dentrrupti quoolores</p>
-					</div>
-					<div class="col-sm"><img src="img/slika.jpg" width="350px">
-						<p>At vero eos et accsamus et iusto odignissimos ducimu qundi oluptatum
-							dentrrupti quoolores</p>
-					</div>
-					<div class="col-sm"><img src="img/slika.jpg" width="350px">
-						<p>At vero eos et accsamus et iusto odignissimos ducimu qundi oluptatum
-							dentrrupti quoolores</p>
-					</div>
-				</div>
-			</div>
-			<!-- pretpostavljam da si htela da imas 3 kolone pa sam izmenio col3 u col-3 i dodao row -->
 		</div>
 
 		<div id="partneri">
 			<div class="container">
 
 				<div class="naslov">
-					<h2><b>Naši partneri</b></h2>
+					<h2>Naši partneri</h2>
 				</div>
 
 				<div class="row justify-content-center">
 
-					<div class="col"><img src="img/partner.png"></div>
-					<div class="col"><img src="img/partner.png"></div>
-					<div class="col"><img src="img/partner.png"></div>
-					<div class="col"><img src="img/partner.png"></div>
+					<div class="col"><img src="img/partner.png" id="rounded" ></div>
+					<div class="col"><img src="img/partner.png" id="rounded" ></div>
+					<div class="col"><img src="img/partner.png" id="rounded" ></div>
+					<div class="col"><img src="img/partner.png" id="rounded" ></div>
 				</div>
 			</div>
 			<!-- ako u divu sa klasom row dodamo divove sa klasom col, automatski se odredjuje sirina diva -->
@@ -168,10 +166,10 @@
 		 async defer></script>
 
 		<div class="row" id="kontakt">
-			<div class="col3" style="text-align: left">Kontaktirajte nas na <br>safon@office.com</div>
-			<div class="col3">@copyright</div>
+			<div class="col-sm" style="text-align: left">Kontaktirajte nas na <br>safon@office.com</div>
+			<div class="col-sm" >@copyright</div>
 
-			<div class="col3" id="drustvene">
+			<div class="col-sm" id="drustvene">
 				<a href="#" class="fa fa-facebook"></a>
 				<a href="#" class="fa fa-twitter"></a>
 				<a href="https://www.instagram.com/studentskaasocijacijafona/" class="fa fa-instagram"></a>
@@ -180,6 +178,10 @@
 		</div>
 
 	</footer>
+
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 
