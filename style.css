@@ -248,7 +248,7 @@ header {
 main {
 	font-family: Arial, Courier, Helvetica, Verdana, sans-serif;
 	position: relative;
-	font-size: 18px;
+	font-size: 22px;
 }
 
 footer {
@@ -257,7 +257,7 @@ footer {
 	padding-bottom: 20px;
 	width: 100%;
 	color: white;
-	font-size: 18px;
+	font-size: 22px;
 	text-transform: none;
 }
 
@@ -267,14 +267,26 @@ footer {
 	margin-right: 20px;
 }
 
-#onama {
-	margin-top: 0;
-	margin-bottom: 20px;
+.slika{
+	background-color: #1b5cc4;
+	width: 60%;
+	height: 300px;
+	text-align: center;
 }
 
-.dark-bg {
-	background-color: #232426;
-	color: white;
+#onama {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.lila span{
+	color:#4c074f;
+	font-size: 30px; 
+}
+
+.white {
+	background-color: #fff;
+	color: #232426;
 	padding-top: 20px;
 	padding-bottom: 40px;
 }
@@ -283,17 +295,27 @@ footer {
     display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 5px auto;
-	padding-top: 50px;
-	padding-bottom: 30px;
+	
+	vertical-align: middle;
+	padding: 75px 0;
+	
 }
 
 .pocetak {
-	background-color: white;
+	background-color: #232426;
+	color: #fff;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	padding: 5% 5%;
+}
+
+#onama{
+	background-color: #232426;
+}
+
+#zasto{
+	background-color: #232426;
 }
 
 #post {
@@ -317,6 +339,10 @@ footer {
 	margin-bottom: 40px;
 }
 
+#projekti h2{
+	text-align: left;
+}
+
 #partneri {
 	width: 100%;
 	color: white;
@@ -329,13 +355,11 @@ footer {
 h2 {
 	font-weight:bold;
 	text-align: center;
-	padding-bottom: 4%;
-	font-size: 25px;
+	padding-bottom: 6%;
+	font-size: 30px;
 }
 
 .projekti {
-	padding-bottom: 2%;
-	padding-top: 2%;
 	padding-left: 4%;
 	padding-right: 4%;
 	width: 33%;
@@ -360,13 +384,21 @@ h2 {
 	margin: 20px;
 }
 
-.naslov {
-	padding-top: 20px;
-	color: white;
+.img-pozadina{
+	background-color: #5f0e6a;
+	width: 83%;
+	height: 100%;
+	z-index: -1;
+	padding-top: 200px; 
 }
 
-#titule {
-	padding: 3% 0;
+.naslov {
+	padding-top: 20px;
+	color: #fff;
+}
+
+.col p {
+	padding: 2% 0;
 	text-align: center;
 	color: #fff;
 }
@@ -376,6 +408,7 @@ h2 {
 }
 
 #board {
+	padding-top: 30px;
 	background-color: #232426;
 }
 
@@ -399,7 +432,7 @@ link {
 	color: white;
 }
 
-#rounded {
+.col img {
 	border-radius: 50%;
 }
 
@@ -422,6 +455,11 @@ link {
 
 .made {
 	font-size: 10px;
+}
+
+.jumbotron {
+	margin: 0;
+
 }
 
 
@@ -452,15 +490,15 @@ h2 {
 	}
 
 	.logo img {
-		position: absolute;
-		padding-top: 10px;
-		top: 7%;
-		left: 3%;
-		max-width: 5%;
+		
+		padding-top: 3px;
+		max-width: 80%;
 	}
 
 	.jumbotron {
 		background-size: 100%;
+		padding: 32% 0;
+		margin: 0;
 
 	}
 
@@ -483,19 +521,54 @@ h2 {
 		text-align: center;
 	}
 
+	#projekti h2{
+		text-align: center;
+	}
+
+	.image{
+		padding: 150px 0;
+
+	}
+
 }
 
 @media only screen and (max-width : 415px) {
 	.logo img {
 		position: absolute;
-		top: 26%;
-		left: 5%;
-		max-width: 10%;
+		padding-top: 1%;
+		left: 4%;
+		max-width: 12%;
+		padding-right: 3%;
+	}
+
+	.nav-link{
+		padding: 6% 1%;
 	}
 
 	header {
 		font-size: 1% !important;
 	}
+
+	main{
+		font-size: 18px;
+	}
+
+	footer {
+		font-size: 18px;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+	
+	#projekti h2{
+		text-align: center;
+	}
+
+	.image {
+		padding:0;
+	}
+
 }
 
 a:link    {
@@ -517,7 +590,7 @@ a:hover   {
   text-decoration:  none;
   font-weight:      none;
   background-color: none;
-  	color:            #232426;
+  color: #5f0e6a;
   }
 
 a.nav-link:hover  {
