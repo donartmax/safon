@@ -233,7 +233,9 @@ header {
 	margin-top: 0;
 }
 
-
+.titule{
+	padding-bottom: 20px;
+}
 
 .nav-link {
 	font-size: 24px;
@@ -254,10 +256,10 @@ main {
 footer {
 	font-family:  Arial, Courier, Helvetica, Verdana, sans-serif;
 	background-color: #232426;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 	width: 100%;
 	color: white;
-	font-size: 22px;
+	font-size: 18px;
 	text-transform: none;
 }
 
@@ -385,11 +387,10 @@ h2 {
 }
 
 .img-pozadina{
-	background-color: #5f0e6a;
-	width: 83%;
-	height: 100%;
+	width: auto;
+	height: auto;
 	z-index: -1;
-	padding-top: 200px; 
+	padding-top: 10px; 
 }
 
 .naslov {
@@ -478,6 +479,15 @@ h2 {
 		padding-bottom: 20px;
 	}
 
+	footer {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.titule {
+		padding-bottom: 50px;
+	}
+
 	.nav-link {
 		font-size: 16px;
 		padding: 5px;
@@ -510,6 +520,7 @@ h2 {
 	.col-sm {
 		text-align: center;
 		padding: 5% 0%;
+		height: auto;
 	}
 
 	.tekst {
@@ -555,6 +566,7 @@ h2 {
 
 	footer {
 		font-size: 18px;
+		text-align: center;
 	}
 
 	h2 {
